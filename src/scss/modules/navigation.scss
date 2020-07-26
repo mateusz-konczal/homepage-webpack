@@ -1,0 +1,38 @@
+.navigation {
+  padding: 16px;
+  display: none;
+  &--open {
+    display: block;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgb(255, 243, 137);
+    display: block;
+    margin: 0 0 16px;
+    &:hover {
+      color: rgb(177, 29, 10);
+      font-weight: bold;
+    }
+    &--css {
+      color: $link-color;
+    }
+    &--homepage {
+      color: $link-color;
+    }
+    &--html {
+      color: $link-color;
+    }
+    &--javascript {
+      color: $link-color;
+    }
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+  @media (min-width: $tablet) {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

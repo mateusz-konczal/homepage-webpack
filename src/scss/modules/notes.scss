@@ -1,0 +1,16 @@
+.notes {
+  &__grid {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 8px;
+      row-gap: 16px;
+    }
+  }
+  &__heading {
+    color: #1f7a8c;
+    &::after {
+      content: " 🔥";
+    }
+  }
+}

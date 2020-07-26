@@ -1,13 +1,27 @@
 @import "~normalize.css";
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+@import "modules/about-me.scss";
+@import "modules/body.scss";
+@import "modules/body-another.scss";
+@import "modules/footer.scss";
+@import "modules/hamburger.scss";
+@import "modules/header.scss";
+@import "modules/hello.scss";
+@import "modules/lesson.scss";
+@import "modules/main.scss";
+@import "modules/navigation.scss";
+@import "modules/notes.scss";
+@import "modules/week-summary.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

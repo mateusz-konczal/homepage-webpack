@@ -1,0 +1,10 @@
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  background: none;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

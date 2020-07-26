@@ -1,0 +1,12 @@
+.lesson {
+  &__description {
+    color: rgb(29, 28, 28);
+    @include line-style;
+  }
+  &__link {
+    color: darkred;
+  }
+  &__title {
+    color: #b62dc9;
+  }
+}

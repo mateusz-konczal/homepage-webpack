@@ -1,0 +1,21 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  //   margin: 70px auto 0;
+  &__grid {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 8px;
+      row-gap: 16px;
+    }
+  }
+  &__heading {
+    color: #05115a;
+    margin: 16px 0 0;
+  }
+  &__picture {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
