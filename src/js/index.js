@@ -1,5 +1,7 @@
 import "../scss/main.scss";
 
+import moment from "moment";
+
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
@@ -75,3 +77,8 @@ hamburger.addEventListener("click", () => {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
 });
+
+// BIBLIOTEKA MOMENT (DATA I CZAS)
+moment.locale("pl");
+const startOfDay = moment().startOf("day").fromNow();
+console.log(`Dzień rozpoczął się ${startOfDay}`);

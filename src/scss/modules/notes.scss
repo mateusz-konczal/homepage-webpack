@@ -9,8 +9,10 @@
   }
   &__heading {
     color: #1f7a8c;
-    &::after {
-      content: " 🔥";
+    @media (min-width: $tablet) {
+      &::after {
+        content: " 🔥";
+      }
     }
   }
 }

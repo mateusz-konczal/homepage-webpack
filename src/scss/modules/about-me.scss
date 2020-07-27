@@ -8,7 +8,11 @@
       margin: 0;
     }
   }
-  &__grid {
+  &__grid-header {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+  }
+  &__grid-presentation {
     @media (min-width: $tablet) {
       display: grid;
       grid-template-columns: 1fr 3fr;
@@ -16,8 +20,10 @@
   }
   &__heading {
     color: #15616d;
-    &::after {
-      content: " 👋";
+    @media (min-width: $tablet) {
+      &::after {
+        content: " 👋";
+      }
     }
   }
   &__picture {
@@ -30,6 +36,13 @@
       //   float: left;
       margin-bottom: 16px;
     }
+  }
+  &__time {
+    color: rgb(44, 43, 43);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   //   @media (min-width: $tablet) {
   //     overflow: hidden;
